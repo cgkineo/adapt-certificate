@@ -1,0 +1,11 @@
+// to be added to course/config.json
+
+"_certificate": {
+	"_certificateWidth": 595,
+	"_certificateHeight": 842,
+	"_coursePositionHeight": 430,
+	"_namePositionHeight": 505,
+	"_datePositionHeight": 575,
+	"_xPosition": 297,
+	"_certificateFilePath": "assets/certificate.png"
+}

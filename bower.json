@@ -1,0 +1,17 @@
+{
+  "name": "adapt-certificate",
+  "version": "1.0.4",
+  "framework": ">=2.0.18",
+  "homepage": "",
+  "issues": "",
+  "displayName" : "Certificate",
+  "extension" : "certificate",
+  "description": "Generates a certificate upon completion.",
+  "main": "/js/adapt-certificate.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_certificate"
+}

@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties":{
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_certificate": {
+              "type": "object",
+              "required": false,
+              "legend": "Certificate",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required":true,
+                  "default": true,
+                  "title": "Is enabled",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether the Resources extension is enabled or disabled."
+                },
+                "_certificateWidth": {
+                  "type": "number",
+                  "required": true,
+                  "default": 595,
+                  "inputType": "Text"
+                },
+                "_certificateHeight": {
+                  "type": "number",
+                  "required": true,
+                  "default": 842,
+                  "inputType": "Text"
+                },
+                "_coursePositionHeight": {
+                  "type": "number",
+                  "required": true,
+                  "default": 430,
+                  "inputType": "Text"
+                },
+                "_namePositionHeight": {
+                  "type": "number",
+                  "required": true,
+                  "default": 505,
+                  "inputType": "Text"
+                },
+                "_datePositionHeight": {
+                  "type": "number",
+                  "required": true,
+                  "default": 575,
+                  "inputType": "Text"
+                },
+                "_xPosition": {
+                  "type": "number",
+                  "required": true,
+                  "default": 297,
+                  "inputType": "Text"
+                },
+                "_certificateFilePath": {
+                  "type":"string",
+                  "required":true,
+                  "default": "",
+                  "inputType": "Asset:image",
+                  "validators": ["required"],
+                  "help": "Select the certificate image"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
