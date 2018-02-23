@@ -1,6 +1,6 @@
 # adapt-certificate
 
-**Certificate** is an *extension* for with the [Adapt framework](https://github.com/adaptlearning/adapt_framework).
+**Certificate** is an *extension* for the [Adapt framework](https://github.com/adaptlearning/adapt_framework).
 It provides the user with a certificate on completing the assessment.
 
 ## Installation
