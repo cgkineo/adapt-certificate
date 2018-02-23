@@ -13,7 +13,7 @@ Please note that the [**Spoor**](https://github.com/adaptlearning/adapt-contrib-
 
 **Certificate** has several attributes to be set in the config.json. These provide a pathway to the template certificate image, as well as dimensions for adding text in the correct positions.
 
-To trigger the certificate, you must include a link with the following attributes: `<a href="javascript:;" class="js-generate-certificate">Certificate</a>`. Please note, this button can trigger a certificate at any stage of the assessment. Hiding the button until the assessment is complete is left at the developer's discretion.
+To trigger the certificate, you must include a link with the following attributes: `<a href="javascript:;" class="js-generate-certificate">Certificate</a>`. Please note, this link can trigger a certificate at any stage of the assessment. Hiding the link until the assessment is complete is left at the developer's discretion.
 
 ## Limitations
 
