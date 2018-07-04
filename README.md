@@ -5,7 +5,7 @@ It provides the user with a certificate on completing the assessment.
 
 ## Installation
 
-Copy the folder into src/extentions. Make sure the details shown in example.json are applied in your config.json.
+Copy the folder into src/extensions. Make sure the details shown in example.json are applied in your config.json.
 
 Please note that the [**Spoor**](https://github.com/adaptlearning/adapt-contrib-spoor) extension must be installed for this extension to work correctly.
 
