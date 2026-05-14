@@ -1,7 +1,6 @@
 # adapt-certificate
 
-**Certificate** is an *extension* for the [Adapt framework](https://github.com/adaptlearning/adapt_framework).
-It provides the user with a certificate on completing the assessment.
+**Certificate** is an *extension* for the [Adapt framework](https://github.com/adaptlearning/adapt_framework). It provides the user with a certificate on completing the assessment.
 
 ## Installation
 
@@ -19,6 +18,9 @@ To trigger the certificate, you must include a link with the following attribute
 
 No known limitations.
 
-
 ----------------------------
 
+**Author / maintainer:**  Mindtools Kineo<br>
+**Accessibility support:**  WAI AA<br>
+**RTL support:**  Yes<br>
+**Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge, Safari for macOS/iOS/iPadOS, Opera<br>
