@@ -5,51 +5,40 @@
   <meta charset="utf-8">
   <title>Final Certificate</title>
   <style>
-  	@media print {
-  		#target {
-  			position: absolute;
-  			top: 50%;
-  			left: 50%;
-  			margin-top: -421px;
-  			margin-left: -298px;
-  		}
-  	}
+    @media print {
+      #target {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -421px;
+        margin-left: -298px;
+      }
+    }
   </style>
 </head>
 <body>
+  <canvas id="target" width="595" height="842"></canvas>
 
-    
-    <canvas id="target" width="595" height="842"></canvas>
+  <script>
+    window.opener.postMessage('message', document.location.origin);
 
-	<script type="text/javascript">
+    window.addEventListener('message', (event) => {
+      const canvas = document.getElementById('target');
+      const ctx = canvas.getContext('2d');
+      const message = event.data;
+      const imageObj = new Image();
 
-		
-		window.opener.postMessage("message", document.location.origin);
+      imageObj.onload = () => {
+        ctx.drawImage(imageObj, 0, 0);
+        ctx.font = '14pt Calibri';
+        ctx.textAlign = 'center';
+        ctx.fillText(message.name, message._xPosition, message._namePositionHeight);
+        ctx.fillText(message.course, message._xPosition, message._coursePositionHeight);
+        ctx.fillText(message.date, message._xPosition, message._datePositionHeight);
+      };
 
-		window.addEventListener('message', function(event) {
-
-			var canvas = document.getElementById('target');
-			var ctx = canvas.getContext('2d');
-			var imageObj = new Image();
-			var message = event.data;
-
-			imageObj.onload = function() {
-				ctx.drawImage(imageObj, 0, 0);
-				ctx.font = "14pt Calibri";
-				ctx.textAlign="center";
-				ctx.fillText(message.name, message._xPosition, message._namePositionHeight);
-				ctx.textAlign="center";
-				ctx.fillText(message.course, message._xPosition, message._coursePositionHeight);
-				ctx.textAlign="center";
-				ctx.fillText(message.date, message._xPosition, message._datePositionHeight);
-				//window.print();
-			};
-
-			imageObj.src = "../" + message._certificateFilePath;
-
-		});
-	
-
-	</script>
+      imageObj.src = '../' + message._certificateFilePath;
+    });
+  </script>
 </body>
 </html>
